@@ -1,8 +1,8 @@
 day = int(input("Введите день: ")) # Ввод дня
 month = int(input("Введите месяц: ")) # Ввод месяца
-if (day < 1 or month < 1):
-    print("Невеная дата!")
-else:
+if (day < 1 or month < 1): # Проверка на существование даты
+    print("Невеная дата!") # Такой даты нету
+else: # Если дата существует
     if (month == 3 and day >= 1) or (month == 4) or (month == 5) or (month == 6 and day <= 31): # Проверка на время года "Весна"
        season = "Весна" # Время года "Весна"
     elif (month == 6 and day >= 1) or (month == 7) or (month == 8) or (month == 9 and day <= 31): # Проверка на время года "Лето"
